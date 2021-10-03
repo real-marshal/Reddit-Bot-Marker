@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit Bot Marker",
+  "version": "1.0",
+  "description": "Mark bots on Reddit",
+  "permissions": ["storage"],
+  "icons": {
+    "48": "reddit_logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/r/*/comments/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
